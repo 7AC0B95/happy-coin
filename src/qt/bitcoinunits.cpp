@@ -44,8 +44,8 @@ QString BitcoinUnits::longName(int unit)
     {
     case BTC: return QString("HPPY");
     case mBTC: return QString("mHPPY");
-    case uBTC: return QString("µHPPY");
-    case SAT: return QString("Glee");
+    case uBTC: return QString("Glee");
+    case SAT: return QString("Joy");
     default: return QString("???");
     }
 }
@@ -54,8 +54,8 @@ QString BitcoinUnits::shortName(int unit)
 {
     switch(unit)
     {
-    case uBTC: return QString::fromUtf8("bits");
-    case SAT: return QString("sat");
+    case uBTC: return QString::fromUtf8("Glee");
+    case SAT: return QString("Joy");
     default: return longName(unit);
     }
 }
@@ -67,7 +67,7 @@ QString BitcoinUnits::description(int unit)
     case BTC: return QString("HAPPYs");
     case mBTC: return QString("Milli-HAPPYs (1 / 1" THIN_SP_UTF8 "000)");
     case uBTC: return QString("Micro-HAPPYs (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-    case SAT: return QString("Glee (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case SAT: return QString("Joy (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }
