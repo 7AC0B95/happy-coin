@@ -122,9 +122,9 @@ public:
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
         //vFixedSeeds.clear();
-        vSeeds.emplace_back("104.41.227.200:35222", true);
-        vSeeds.emplace_back("40.83.18.120:35222", true);
-        vSeeds.emplace_back("85.83.142.98:35222", true);
+        vSeeds.emplace_back("104.41.227.200", true);
+        vSeeds.emplace_back("40.83.18.120", true);
+        vSeeds.emplace_back("85.83.142.98", true);
         //vSeeds.clear();
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,40);
